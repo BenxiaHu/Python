@@ -1,4 +1,4 @@
-# Numpy基础语法
+#Numpy基础语法
 
 
 ## 使用np.array()创建

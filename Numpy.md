@@ -114,7 +114,7 @@ np.unique()
 ### np.random.poisson()
 泊松分布 参数λ是单位时间(或单位面积)内随机事件的平均发生次数，它适合于描述单位时间内随机事件发生的次数。
 
-## Rference:
+## Reference:
 1. Python学习教程：Numpy系列，创建数组的三大绝招 (https://www.jianshu.com/p/7ae6947f722a)
 2. Numpy (https://www.jianshu.com/p/ddb9c280666e)
 

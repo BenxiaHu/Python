@@ -2,6 +2,8 @@
 
 ## 安装numpy
 pip install numpy
+import numpy as np
+
 
 
 ## 使用np.array()创建
@@ -59,6 +61,9 @@ np.sort()与ndarray.sort()
 np.sort()不改变输入
 ndarray.sort()本地处理，不占用空间，但改变输入
 
+##### 唯一值,去重
+np.unique()
+
 ##### 部分排序
 ###### np.partition(a,k)
 当k为正时，我们想要得到最小的k个数
@@ -88,6 +93,9 @@ ndarray.sort()本地处理，不占用空间，但改变输入
 
 ## 使用随机库函数创建
 
+### np.random.rand()
+产生[0,1]的浮点随机数,括号里面的参数可以指定产生数组的形状
+
 ### np.random.random(size)
 生成0-1的随机数,左闭右开，size表示个数，可以是一维、二维或者三维
 
@@ -98,8 +106,13 @@ ndarray.sort()本地处理，不占用空间，但改变输入
 生成标准正态分布,size个数
 
 ### np.random.normal(loc,scale,size)
-生成标准正态分布
+生成非标准正态分布
 
+### np.random.uniform()
+均匀分布
+
+### np.random.poisson()
+泊松分布 参数λ是单位时间(或单位面积)内随机事件的平均发生次数，它适合于描述单位时间内随机事件发生的次数。
 
 ## Rference:
 1. Python学习教程：Numpy系列，创建数组的三大绝招 (https://www.jianshu.com/p/7ae6947f722a)

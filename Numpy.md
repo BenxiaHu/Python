@@ -27,3 +27,7 @@
 ### np.random.randn(size)，生成标准正态分布,size个数
 
 ### np.random.normal(loc,scale,size)，生成非标准正态分布
+
+
+## Rference:
+Python学习教程：Numpy系列，创建数组的三大绝招 (https://www.jianshu.com/p/7ae6947f722a)

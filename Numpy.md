@@ -7,7 +7,7 @@ pip install numpy
 ## 使用np.array()创建
 np.arange(x)为左闭右开结构，数据从0开始，到x-1结束，生成规则递增序列，同时也可以指定arange的3s参数，start、stop与step。
 numpy默认ndarray的所有元素的类型是相同的。
-如果传进来的列表中包含不同的类型，则统一为同一类型，优先级：**str>float>int**。 <font size=4 color=#D2691E>列表:</font>
+如果传进来的列表中包含不同的类型，则统一为同一类型，优先级：**str>float>int**。 <font size=4 color=red>列表:</font>
 
 ## 使用内置函数便捷创建
 

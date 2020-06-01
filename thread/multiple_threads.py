@@ -43,3 +43,32 @@ if __name__ == '__main__':
     t1.join() #join等t1子线程结束，主线程打印并且结束
     t2.join() #join等t2子线程结束，主线程打印并且结束
     print("程序结束=====================")
+
+
+
+import threading
+import time
+num = 10
+def fun_sub(ID):
+    global num
+    lock.acquire()
+    num2 = num
+    time.sleep(0.001)
+    num = num2-1
+    print('num2=%s' %num2)
+    print('----%s----' %ID)
+    lock.release()
+
+
+if __name__ == '__main__':
+    print('开始测试同步锁 at %s' % time.ctime())
+    lock = threading.Lock() #创建一把同步锁
+    thread_list = []
+    for thread in range(num):
+        t = threading.Thread(target=fun_sub, args=('小明',))
+        t.start()
+        thread_list.append(t)
+    for t in thread_list:
+        t.join()
+    print('num is %d' % num)
+    print('结束测试同步锁 at %s' % time.ctime())
